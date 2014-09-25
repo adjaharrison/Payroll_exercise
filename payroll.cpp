@@ -27,6 +27,7 @@ Payroll::Payroll(QWidget *parent)
 
     connect(btnCalculate,SIGNAL(clicked()),this,SLOT(calculate_Pay()));
     connect(btnExit,SIGNAL(clicked()),this,SLOT(close()));
+    connect(txtHourlyRate,SIGNAL(returnPressed()),this,SLOT(calculate_Pay()));
 
     //Layout
     QGridLayout *mainLayout = new QGridLayout;
